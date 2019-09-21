@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:text="Eigene IPs"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:text="Medium Text"
+		android:id="@+id/mainTextView1"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:text="Server IP-Adresse eingeben, dann auf  Verbinden clicken (bitte alle auf eine einigen)"
+		android:textAlignment="center"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:text="Server IP"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<EditText
+				android:inputType="text"
+				android:layout_width="wrap_content"
+				android:ems="10"
+				android:layout_height="wrap_content"
+				android:id="@+id/mainEditText1"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:text="Nickname"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<EditText
+				android:inputType="text"
+				android:layout_width="wrap_content"
+				android:ems="10"
+				android:layout_height="wrap_content"
+				android:id="@+id/mainEditText2"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Verbinden"
+		android:id="@+id/mainButton1"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:text="Nachricht zum senden:"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:id="@+id/mainEditText3"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:onClick="senden"
+		android:text="sende Nachricht"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:id="@+id/mainEditText4"
+		android:singleLine="false"
+		android:gravity="top"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:text="Status: Nicht verbunden"
+		android:id="@+id/statustext"/>
+
+</LinearLayout>
+
